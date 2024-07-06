@@ -29,7 +29,8 @@
     "../../apps/log-management/.next/types/**/*.ts",
     "../../dist/apps/log-management/.next/types/**/*.ts",
     "next-env.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "../../dist/log-management/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
