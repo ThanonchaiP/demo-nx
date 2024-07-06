@@ -1,5 +1,12 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
   "defaultBase": "master",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
@@ -21,7 +28,7 @@
       "options": {
         "startTargetName": "start",
         "buildTargetName": "build",
-        "devTargetName": "dev",
+        "devTargetName": "serve",
         "serveStaticTargetName": "serve-static"
       }
     },
